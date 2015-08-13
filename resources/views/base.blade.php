@@ -40,8 +40,6 @@
 		@yield('content')
 	</div>
 
-   	<script src="{{ asset('/tema-admin/bower_components/jquery/dist/jquery.min.js') }}"></script>
-
    	<!-- jQuery -->
     <script src="{{ asset('/tema-admin/bower_components/jquery/dist/jquery.min.js') }}"></script>
 

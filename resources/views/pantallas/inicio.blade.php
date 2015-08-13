@@ -66,7 +66,7 @@
 								<li><a href="">Tipo de Servicio</a>
 								<ul>
 								<li><a href="{{ url('/formseric') }}">Seric</a></li>
-								<li><a href="{{ url('/formradiofonica') }}">Radiofonica</a></li>
+								<li><a href="{{ url('/pantallas/formseric') }}">Radiofonica</a></li>
 								<li><a href="{{ url('/formpreciudadano') }}">Presentacion de ciudadano</a></li>
 								<li><a href="{{ url('/formreferencia') }}">Referencia</a></li>
 								<li><a href="{{ url('/formllamada') }}">Llamada Telefonica</a></li>

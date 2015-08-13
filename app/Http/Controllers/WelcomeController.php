@@ -40,7 +40,7 @@ public function contacto()
 
 	public function formseric()
 	{
-		return view('formseric');
+		return view('/pantallas/formseric');
 	}
 
 	public function formradiofonica()

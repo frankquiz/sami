@@ -1,10 +1,17 @@
-<html>
-<head>
-	<meta charset="UTF8">
-	<title>SERIC</title>
-</head>
-<body>
-		<h1 align="center">FORMULARIO SERIC</h1>
+@extends('base')
+
+@section('content')
+
+	<nav class="navbar navbar-default navbar-static-top active" role="navigation" style="margin-bottom: 0">
+
+		@include('layout/nav-top')
+
+		@include('layout/side-bar')
+
+	</nav>
+
+        <div id="page-wrapper">
+            <div class="row">
 		
 <form action="." oninput="range_control_value.value = range_control.valueAsNumber">
 <p>
@@ -38,6 +45,11 @@ Color Favorito: <input type="color" name="color_control" />
 </p>
 </form>
 
+				</div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
 
-</body>
-</html>
+
+
+@endsection
