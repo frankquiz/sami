@@ -30,55 +30,20 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('welcome');
+		return view('index');
+
 	}
 
-public function contacto()
+	public function contacto()
 	{
 		return view('contacto');
+
 	}
 
-	public function formseric()
+	public function reviews()
 	{
-		return view('formseric');
+		return view('reviews');
+
 	}
 
-	public function formradiofonica()
-	{
-		return view('formradiofonica');
-	}
-
-	public function formpreciudadano()
-	{
-		return view('formpreciudadano');
-	}
-
-	public function formreferencia()
-	{
-		return view('formreferencia');
-	}
-
-	public function formllamada()
-	{
-		return view('formllamadatelefonica');
-	}
-	
-	public function listaserviciopendiente()
-	{
-		return view('listaserviciopendiente');
-	}
-
-	public function listaserviciopendienteporfinalizar()
-	{
-		return view('listaserviciopendienteporfinalizar');
-	}
-
-
-
-
-	public function paginicio()
-	{
-		return view('inicio');
-	}
-	
 }
