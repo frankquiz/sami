@@ -2,7 +2,7 @@
 <div class="navbar-default sidebar" role="navigation">
     <div class="sidebar-nav navbar-collapse active">
         <ul class="nav in" id="side-menu">
-            <li class="sidebar-search">
+           <!-- <li class="sidebar-search">
                 <div class="input-group custom-search-form">
                     <input type="text" class="form-control" placeholder="Search...">
                     <span class="input-group-btn">
@@ -11,53 +11,121 @@
                     </button>
                 </span>
                 </div>
-                <!-- /input-group -->
+                
+            </li>
+            -->
+            <li>
+                <a href="{{ url('/pantallas/contacto') }}"><i class="fa fa-dashboard fa-fw"></i> Inicio</a>
             </li>
             <li>
-                <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-            </li>
-            <li>
-                <a href="#" class="active"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+                <a href="#" class="active"><i class="fa fa-bar-chart-o fa-fw"></i> Nuevo Servicio<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
                     <li>
-                        <a href="flot.html">Flot Charts</a>
+                        <a href="flot.html">Seric</a>
                     </li>
                     <li>
-                        <a href="morris.html">Morris.js Charts</a>
+                        <a href="morris.html">Radiofonica</a>
+                    </li>
+                    <li>
+                        <a href="morris.html">P Ciudadano</a>
+                    </li>
+                    <li>
+                        <a href="morris.html">Referencia</a>
+                    </li>
+                    <li>
+                        <a href="morris.html">Llamada Telefonica</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->
             </li>
             <li>
-                <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                <a href="tables.html"><i class="fa fa-table fa-fw"></i>Estatus de Servicio</a>
             </li>
+
+            <li>
+                            <a href="#" class="active"><i class="fa fa-wrench fa-fw"></i> Inventario<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="panels-wells.html">Cargar Inventario</a>
+                            </li>
+                            <li>
+                                <a href="panels-wells.html">Descargar Inventario</a>
+                            </li>
+                        </ul>
+                        </li>
+            
+
+            <!--Otra Opcion del Menu
             <li>
                 <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
             </li>
+
+            -->
+            
+
+
+
             <li>
-                <a href="#" class="active"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                <a href="#" class="active"><i class="fa fa-files-o fa-fw"></i> Reportes<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
+                        <li>
+                          <a href="#" class="active"><i class="fa fa-files-o fa-fw"></i> Servicios<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="panels-wells.html">Por Unidad</a>
+                            </li>
+                            <li>
+                                <a href="panels-wells.html">Por Paramedico</a>
+                            </li>
+                            <li>
+                                <a href="panels-wells.html">Por Conductor</a>
+                            </li>
+                            <li>
+                                <a href="panels-wells.html">Por Fecha</a>
+                            </li>
+                        </ul>
+                    
+                        </li>
+                    
+                        <li>
+                            <a href="#" class="active"><i class="fa fa-files-o fa-fw"></i> Inventario<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="panels-wells.html">Carga de Inventario</a>
+                            </li>
+                            <li>
+                                <a href="panels-wells.html">Descarga de Inventario</a>
+                            </li>
+                        </ul>
+                        </li>
+
+
+
+<!-- Otras opciones del Menu
                     <li>
-                        <a href="panels-wells.html">Panels and Wells</a>
+                        <a href="buttons.html">Inventario</a>
+                    </li>
+                    
+                    <li>
+                        <a href="notifications.html">######</a>
                     </li>
                     <li>
-                        <a href="buttons.html">Buttons</a>
+                        <a href="typography.html">#####</a>
                     </li>
                     <li>
-                        <a href="notifications.html">Notifications</a>
+                        <a href="icons.html"> #####</a>
                     </li>
                     <li>
-                        <a href="typography.html">Typography</a>
+                        <a href="grid.html">#####</a>
                     </li>
-                    <li>
-                        <a href="icons.html"> Icons</a>
-                    </li>
-                    <li>
-                        <a href="grid.html">Grid</a>
-                    </li>
+
+                    Cerrando Opciones del Menu-->
                 </ul>
                 <!-- /.nav-second-level -->
             </li>
+           
+           
+<!--
             <li class="active">
                 <a href="#" class="active"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse in">
@@ -83,11 +151,12 @@
                                 <a href="#" class="active">Third Level Item</a>
                             </li>
                         </ul>
-                        <!-- /.nav-third-level -->
+                        
                     </li>
                 </ul>
-                <!-- /.nav-second-level -->
+                
             </li>
+
             <li>
                 <a href="#" class="active"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
@@ -98,8 +167,9 @@
                         <a href="login.html">Login Page</a>
                     </li>
                 </ul>
-                <!-- /.nav-second-level -->
+                
             </li>
+-->
         </ul>
     </div>
     <!-- /.sidebar-collapse -->
