@@ -13,10 +13,12 @@
  Route::get('/', 'WelcomeController@index');
  Route::get('/pantallas/contacto', 'WelcomeController@contacto');
  Route::get('/pantallas/formseric', 'WelcomeController@formseric');
- Route::get('formradiofonica', 'WelcomeController@formradiofonica');
- Route::get('formpreciudadano', 'WelcomeController@formpreciudadano');
- Route::get('formreferencia', 'WelcomeController@formreferencia');
- Route::get('formllamada', 'WelcomeController@formllamada');
+ Route::get('/pantallas/formradiofonica', 'WelcomeController@formradiofonica');
+ Route::get('/pantallas/formpreciudadano', 'WelcomeController@formpreciudadano');
+ Route::get('/pantallas/formreferencia', 'WelcomeController@formreferencia');
+ Route::get('/pantallas/formllamadatelefonica', 'WelcomeController@formllamadatelefonica');
+
+
  Route::get('listaserviciopendiente', 'WelcomeController@listaserviciopendiente');
 Route::get('listaserviciopendienteporfinalizar', 'WelcomeController@listaserviciopendienteporfinalizar');
 Route::get('inicio', 'WelcomeController@paginicio');

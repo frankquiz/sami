@@ -21,19 +21,19 @@
                 <a href="#" class="active"><i class="fa fa-bar-chart-o fa-fw"></i> Nuevo Servicio<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
                     <li>
-                        <a href="flot.html">Seric</a>
+                        <a href="{{ url('/pantallas/formseric') }}">Seric</a>
                     </li>
                     <li>
-                        <a href="morris.html">Radiofonica</a>
+                        <a href="{{ url('/pantallas/formradiofonica') }}">Radiofonica</a>
                     </li>
                     <li>
-                        <a href="morris.html">P Ciudadano</a>
+                        <a href="{{ url('/pantallas/formpreciudadano') }}">P Ciudadano</a>
                     </li>
                     <li>
-                        <a href="morris.html">Referencia</a>
+                        <a href="{{ url('/pantallas/formreferencia') }}">Referencia</a>
                     </li>
                     <li>
-                        <a href="morris.html">Llamada Telefonica</a>
+                        <a href="{{ url('/pantallas/formllamadatelefonica') }}">Llamada Telefonica</a>
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->

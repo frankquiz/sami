@@ -45,22 +45,22 @@ public function contacto()
 
 	public function formradiofonica()
 	{
-		return view('formradiofonica');
+		return view('/pantallas/formradiofonica');
 	}
 
 	public function formpreciudadano()
 	{
-		return view('formpreciudadano');
+		return view('/pantallas/formpreciudadano');
 	}
 
 	public function formreferencia()
 	{
-		return view('formreferencia');
+		return view('/pantallas/formreferencia');
 	}
 
-	public function formllamada()
+	public function formllamadatelefonica()
 	{
-		return view('formllamadatelefonica');
+		return view('/pantallas/formllamadatelefonica');
 	}
 	
 	public function listaserviciopendiente()

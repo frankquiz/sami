@@ -152,10 +152,12 @@
                     </div>
                     <!-- /.panel -->
 
+                    <!--
                     <div class="chat-panel panel panel-default">
                         <div class="panel-heading">
                             <i class="fa fa-comments fa-fw"></i>
                             Chat
+                           
                             <div class="btn-group pull-right">
                                 <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
                                     <i class="fa fa-chevron-down"></i>
@@ -190,10 +192,13 @@
                                 </ul>
                             </div>
                         </div>
+                     cerrando comentario del div de arriba-->
                         <!-- /.panel-heading -->
+                        <!--
                         <div class="panel-body">
-                            <ul class="chat">
-                                <li class="left clearfix">
+                            
+                            <ul class="chat">-->
+                                <!--<li class="left clearfix">
                                     <span class="chat-img pull-left">
                                         <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
                                     </span>
@@ -209,7 +214,9 @@
                                         </p>
                                     </div>
                                 </li>
-                                <li class="right clearfix">
+                                -->
+                               <!--
+                               <li class="right clearfix">
                                     <span class="chat-img pull-right">
                                         
                                     </span>
@@ -223,7 +230,8 @@
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
                                         </p>
                                     </div>
-                                </li>
+                                </li>-->
+                                <!--
                                 <li class="left clearfix">
                                     <span class="chat-img pull-left">
                                         
@@ -238,8 +246,8 @@
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
                                         </p>
                                     </div>
-                                </li>
-                                <li class="right clearfix">
+                                </li>-->
+                                <!--<li class="right clearfix">
                                     <span class="chat-img pull-right">
                                         
                                     </span>
@@ -253,10 +261,11 @@
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
                                         </p>
                                     </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /.panel-body -->
+                                </li>-->
+                            <!--</ul>-->
+
+                        <!--</div>-->
+                        <!-- /.panel-body
                         <div class="panel-footer">
                             <div class="input-group">
                                 <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
@@ -266,9 +275,9 @@
                                     </button>
                                 </span>
                             </div>
-                        </div>
+                        </div>-->
                         <!-- /.panel-footer -->
-                    </div>
+                    <!--</div>-->
                     <!-- /.panel .chat-panel -->
                 </div>
                 <!-- /.col-lg-4 -->
