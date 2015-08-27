@@ -34,7 +34,7 @@
                         </div>
                     <!-- /.panel -->
                     <div class="panel panel-default">
-                        <div class="panel-heading">
+                        <!--<div class="panel-heading">
                             <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Exampl
                             <div class="pull-right">
                                 <div class="btn-group">
@@ -55,12 +55,12 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <div class="table-responsive">
+                                    <!--<div class="table-responsive">
                                         <table class="table table-bordered table-hover table-striped">
                                             <thead>
                                                 <tr>
@@ -121,7 +121,7 @@
                                                 </tr>
                                             </tbody>
                                         </table>
-                                    </div>
+                                    </div>-->
                                     <!-- /.table-responsive -->
                                 </div>
                                 <!-- /.col-lg-4 (nested) -->
@@ -140,23 +140,23 @@
                 <div class="col-lg-4">
                     <div class="panel panel-default">
                         
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
-                        </div>
-                        <div class="panel-body">
-                            <div id="morris-donut-chart"></div>
-                            <a href="#" class="btn btn-default btn-block">View Details</a>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
+                        <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <i class="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
+                                </div>
+                            <div class="panel-body">
+                                <div id="morris-donut-chart"></div>
+                                    <a href="#" class="btn btn-default btn-block">View Details</a>
+                                </div>
+                            <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
 
-                    <!--
-                    <div class="chat-panel panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-comments fa-fw"></i>
-                            Chat
+                            <!--
+                            <div class="chat-panel panel panel-default">
+                                <div class="panel-heading">
+                                <i class="fa fa-comments fa-fw"></i>
+                                
                            
                             <div class="btn-group pull-right">
                                 <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -191,8 +191,9 @@
                                     </li>
                                 </ul>
                             </div>
+                            cerrando comentario del div de arriba-->
                         </div>
-                     cerrando comentario del div de arriba-->
+                     
                         <!-- /.panel-heading -->
                         <!--
                         <div class="panel-body">

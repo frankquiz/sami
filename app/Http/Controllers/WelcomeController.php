@@ -33,9 +33,9 @@ class WelcomeController extends Controller {
 		return view('welcome');
 	}
 
-public function contacto()
+public function prueba()
 	{
-		return view('/pantallas/contacto');
+		return view('/pantallas/prueba');
 	}
 
 	public function formseric()

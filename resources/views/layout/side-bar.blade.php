@@ -15,7 +15,7 @@
             </li>
             -->
             <li>
-                <a href="{{ url('/pantallas/contacto') }}"><i class="fa fa-dashboard fa-fw"></i> Inicio</a>
+                <a href="{{ url('/pantallas/prueba') }}"><i class="fa fa-dashboard fa-fw"></i> Inicio</a>
             </li>
             <li>
                 <a href="#" class="active"><i class="fa fa-bar-chart-o fa-fw"></i> Nuevo Servicio<span class="fa arrow"></span></a>
