@@ -46,10 +46,10 @@
                             <a href="#" class="active"><i class="fa fa-wrench fa-fw"></i> Inventario<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
                             <li>
-                                <a href="panels-wells.html">Cargar Inventario</a>
+                                <a href="{{ url('/pantallas/cargadeinventario') }}">Cargar Inventario</a>
                             </li>
                             <li>
-                                <a href="panels-wells.html">Descargar Inventario</a>
+                                <a href="{{ url('/pantallas/descargadeinventario') }}">Descargar Inventario</a>
                             </li>
                         </ul>
                         </li>
@@ -91,10 +91,10 @@
                             <a href="#" class="active"><i class="fa fa-files-o fa-fw"></i> Inventario<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
                             <li>
-                                <a href="panels-wells.html">Carga de Inventario</a>
+                                <a href="#">Carga de Inventario</a>
                             </li>
                             <li>
-                                <a href="panels-wells.html">Descarga de Inventario</a>
+                                <a href="#">Descarga de Inventario</a>
                             </li>
                         </ul>
                         </li>

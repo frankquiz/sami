@@ -62,6 +62,17 @@ public function prueba()
 	{
 		return view('/pantallas/formllamadatelefonica');
 	}
+
+	public function cargadeinventario()
+	{
+		return view('/pantallas/cargadeinventario');
+	}
+
+	public function descargadeinventario()
+	{
+		return view('/pantallas/descargadeinventario');
+	}
+
 	
 	public function listaserviciopendiente()
 	{

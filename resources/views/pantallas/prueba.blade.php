@@ -17,65 +17,22 @@
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
-            <!-- /.row -->
-            <div class="row">
-                <h1>hola</h1>
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="panel panel-default">
-                        
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div id="morris-area-chart"></div>
-                        </div>
-                        <!-- /.panel-body -->
-                        </div>
-                    <!-- /.panel -->
-                    <div class="panel panel-default">
-                        
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    
-                                </div>
-                                <!-- /.col-lg-4 (nested) -->
-                                <div class="col-lg-8">
-                                    <div id="morris-bar-chart"></div>
-                                </div>
-                                <!-- /.col-lg-8 (nested) -->
-                            </div>
-                            <!-- /.row -->
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                    
-                <!-- /.col-lg-8 -->
-                <div class="col-lg-4">
-                    <div class="panel panel-default">
-                        
-                        <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <i class="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
-                                </div>
-                            <div class="panel-body">
-                                <div id="morris-donut-chart"></div>
-                                    <a href="#" class="btn btn-default btn-block">View Details</a>
-                                </div>
-                            <!-- /.panel-body -->
-                            </div>
-                            <!-- /.panel -->
 
-                            
-                        </div>
-                     
-                        
-                </div>
-                <!-- /.col-lg-4 -->
-            </div>
-            <!-- /.row -->
+            <div class="lol" id="morris-area-chart"></div>
+            <div class="lol" id="morris-bar-chart"></div>
+            <div class="lol" id="morris-donut-chart"></div>
+                                  
+            <h1>Hola</h1>
+
+            <p>
+                                <button type="button" class="btn btn-default">Default</button>
+                                <button type="button" class="btn btn-primary">Primary</button>
+                                <button type="button" class="btn btn-success">Success</button>
+                                <button type="button" class="btn btn-info">Info</button>
+                                <button type="button" class="btn btn-warning">Warning</button>
+                                <button type="button" class="btn btn-danger">Danger</button>
+                                <button type="button" class="btn btn-link">Link</button>
+                            </p>
         </div>
         <!-- /#page-wrapper -->
 

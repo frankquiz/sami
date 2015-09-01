@@ -31,8 +31,8 @@
     <!-- Custom Fonts -->
     <link href="{{ asset('/tema-admin/bower_components/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
 
-   
-   
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/style.css') }}">
+
 </head>
 
 <body>

@@ -13,7 +13,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Llamada Telefonica</h1>
+                    <h1 class="page-header">Descarga de Inventario</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -27,40 +27,36 @@
                                                                         
                                     <h1>Planilla</h1>
                                     <form role="form">
+
+                                        <div class="form-group input-group">
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
                                         <div class="form-group has-success">
-                                            <label class="control-label" for="inputSuccess">Nombre del Solicitante:</label>
+                                            <label class="control-label" for="inputSuccess">Fecha:</label>
                                             <input type="text" class="form-control" id="inputSuccess">
                                         </div>
                                         <div class="form-group has-warning">
-                                            <label class="control-label" for="inputWarning">Cedula del Solicitate:</label>
+                                            <label class="control-label" for="inputWarning">Motivo:</label>
                                             <input type="text" class="form-control" id="inputWarning">
                                         </div>
                                         <div class="form-group has-error">
-                                            <label class="control-label" for="inputError">Telefono del Solicitante:</label>
+                                            <label class="control-label" for="inputError">Descripcion:</label>
                                             <input type="text" class="form-control" id="inputError">
                                         </div>
 
                                         <div class="form-group has-success">
-                                            <label class="control-label" for="inputSuccess">Direccion de la Emergencia:</label>
+                                            <label class="control-label" for="inputSuccess">Cantidad:</label>
                                             <input type="number" class="form-control" id="inputSuccess">
-                                        </div>
-                                        <div class="form-group has-success">
-                                            <label class="control-label" for="inputSuccess">Nombre del Paciente:</label>
-                                            <input type="text" class="form-control" id="inputSuccess">
-                                        </div>
-                                        <div class="form-group has-warning">
-                                            <label class="control-label" for="inputWarning">Edad del Paciente:</label>
-                                            <input type="text" class="form-control" id="inputWarning">
-                                        </div>
-                                        <div class="form-group has-error">
-                                            <label class="control-label" for="inputError">IDX del Paciente:</label>
-                                            <input type="text" class="form-control" id="inputError">
                                         </div>
                                     </form>
 
-                             <p>
+                             <p align="center">
                                 
-                                <button type="button" class="btn btn-outline btn-success">Procesar</button>
+                                <button type="button" class="btn btn-outline btn-success">Descargar</button>
 
                                 <button type="button" class="btn btn-outline btn-info">Limpiar</button>
                                 
