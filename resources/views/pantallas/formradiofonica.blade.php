@@ -26,36 +26,36 @@
             <div class="col-lg-6">
                                                                         
                                     <h1>Planilla</h1>
-                                    <form role="form">
+                                    <form  id="formularioradiofonica" role="form">
 
                                     	<div class="form-group has-error">
                                             <label class="control-label" for="inputError">Nombre Del Solicitante</label>
-                                            <input type="text" class="form-control" id="inputError">
+                                            <input style="width:200px;" type="text" class="form-control" id="inombre_solicitante" placeholder="Ejemplo: Pedro Perez" required>
                                         </div>
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Hora de Solicitud:</label>
-                                            <input type="text" class="form-control" id="inputSuccess">
+                                            <input style="width:130px;" type="time" class="form-control" id="ihora_solicitud">
                                         </div>
                                         <div class="form-group has-warning">
                                             <label class="control-label" for="inputWarning">IDX del Paciente</label>
-                                            <input type="text" class="form-control" id="inputWarning">
+                                            <input type="text" class="form-control" id="iidx_paciente" placeholder="Descripcion o estatus del paciente" required>
                                         </div>
                                         <div class="form-group has-error">
                                             <label class="control-label" for="inputError">Edad</label>
-                                            <input type="text" class="form-control" id="inputError">
+                                            <input  style="width:70px;"type="number" class="form-control" id="iedad" placeholder="0" required>
                                         </div>
 
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Direccion de la Emergencia</label>
-                                            <input type="text" class="form-control" id="inputSuccess">
+                                            <input type="textrea" class="form-control" id="idireccion_emergencia" placeholder="Direccion de la Emergencia" required>
                                         </div>
                                     </form>
 
-                             <p>
+                             <p align="center">
                                 
                                 <button type="button" class="btn btn-outline btn-success">Procesar</button>
 
-                                <button type="button" class="btn btn-outline btn-info">Limpiar</button>
+                                <button type="reset" class="btn btn-outline btn-info">Limpiar</button>
                                 
                                 <button type="button" class="btn btn-outline btn-danger">Cancelar</button>
                                 
