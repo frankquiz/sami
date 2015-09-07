@@ -33,7 +33,7 @@ class WelcomeController extends Controller {
 		return view('welcome');
 	}
 
-public function prueba()
+public function inicio()
 	{
 		return view('/pantallas/prueba');
 	}
@@ -89,7 +89,7 @@ public function prueba()
 
 	public function paginicio()
 	{
-		return view('inicio');
+		return view('welcome');
 	}
 	
 }

@@ -23,7 +23,7 @@ Route::get('/pantallas/descargadeinventario', 'WelcomeController@descargadeinven
 
  Route::get('listaserviciopendiente', 'WelcomeController@listaserviciopendiente');
 Route::get('listaserviciopendienteporfinalizar', 'WelcomeController@listaserviciopendienteporfinalizar');
-Route::get('inicio', 'WelcomeController@paginicio');
+Route::get('/', 'WelcomeController@paginicio');
 
 
 Route::get('home', 'HomeController@index');

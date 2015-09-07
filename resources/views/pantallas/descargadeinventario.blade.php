@@ -40,11 +40,11 @@
                                             <input type="text" class="form-control" id="inputSuccess">
                                         </div>
                                         <div class="form-group has-warning">
-                                            <label class="control-label" for="inputWarning">Motivo:</label>
+                                            <label class="control-label" for="inputWarning">Motivo de Descarga:</label>
                                             <input type="text" class="form-control" id="inputWarning">
                                         </div>
                                         <div class="form-group has-error">
-                                            <label class="control-label" for="inputError">Descripcion:</label>
+                                            <label class="control-label" for="inputError">Nombre del Producto:</label>
                                             <input type="text" class="form-control" id="inputError">
                                         </div>
 

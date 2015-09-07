@@ -41,7 +41,7 @@
                                         </div>
 
                                         <div class="form-group has-success">
-                                            <label class="control-label" for="inputSuccess">Cedula de Identidad</label>
+                                            <label class="control-label" for="inputSuccess">Cedula de Identidad del Operador:</label>
                                             <input style="width:200px;" type="text" class="form-control" id="ici_operador_seric" placeholder="Ejemplo: V-123456" required>
                                         </div>
                                     </form>

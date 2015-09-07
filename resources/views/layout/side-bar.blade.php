@@ -15,7 +15,7 @@
             </li>
             -->
             <li>
-                <a href="{{ url('/pantallas/prueba') }}"><i class="fa fa-dashboard fa-fw"></i> Inicio</a>
+                <a href="{{ url('/') }}"><i class="fa fa-dashboard fa-fw"></i> Inicio</a>
             </li>
             <li>
                 <a href="#" class="active"><i class="fa fa-bar-chart-o fa-fw"></i> Nuevo Servicio<span class="fa arrow"></span></a>
@@ -68,6 +68,9 @@
             <li>
                 <a href="#" class="active"><i class="fa fa-files-o fa-fw"></i> Reportes<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
+                        <li>
+                                <a href="{{ url('/pantallas/#') }}">Minutas</a>
+                        </li>
                         <li>
                           <a href="#" class="active"><i class="fa fa-files-o fa-fw"></i> Servicios<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">

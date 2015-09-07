@@ -13,7 +13,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">RADIOFONICA</h1>
+                    <h1 class="page-header">Llamada Radiofonica</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -37,16 +37,16 @@
                                             <input style="width:130px;" type="time" class="form-control" id="ihora_solicitud">
                                         </div>
                                         <div class="form-group has-warning">
-                                            <label class="control-label" for="inputWarning">IDX del Paciente</label>
-                                            <input type="text" class="form-control" id="iidx_paciente" placeholder="Descripcion o estatus del paciente" required>
+                                            <label class="control-label" for="inputWarning">IDX del Paciente:</label>
+                                            <input type="text" class="form-control" id="iidx_paciente" placeholder="Diagnostico del paciente" required>
                                         </div>
                                         <div class="form-group has-error">
-                                            <label class="control-label" for="inputError">Edad</label>
+                                            <label class="control-label" for="inputError">Edad:</label>
                                             <input  style="width:70px;"type="number" class="form-control" id="iedad" placeholder="0" required>
                                         </div>
 
                                         <div class="form-group has-success">
-                                            <label class="control-label" for="inputSuccess">Direccion de la Emergencia</label>
+                                            <label class="control-label" for="inputSuccess">Direccion de la Emergencia:</label>
                                             <input type="textrea" class="form-control" id="idireccion_emergencia" placeholder="Direccion de la Emergencia" required>
                                         </div>
                                     </form>

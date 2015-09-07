@@ -13,7 +13,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">PRESENTACION DE CIUDADANO</h1>
+                    <h1 class="page-header">Presentacion de Ciudadano</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -51,7 +51,7 @@
                                         </div>
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">IDX del Paciente:</label>
-                                            <input type="text" class="form-control" id="iidx_paciente" placeholder="Descripcion o estatus del paciente">
+                                            <input type="text" class="form-control" id="iidx_paciente" placeholder="Diagnostico del paciente">
                                         </div>
                                         <div class="form-group has-warning">
                                             <label class="control-label" for="inputWarning">Direccion de la Emergencia:</label>

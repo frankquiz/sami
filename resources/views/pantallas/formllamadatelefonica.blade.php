@@ -13,7 +13,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">LLAMADA TELEFONICA</h1>
+                    <h1 class="page-header">Llamada Telefonica</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -42,7 +42,7 @@
 
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Direccion de la Emergencia:</label>
-                                            <input type="number" class="form-control" id="idireccion_emergencia" placeholder="Direccion de la Emergencia" required>
+                                            <input type="text" class="form-control" id="idireccion_emergencia" placeholder="Direccion de la Emergencia" required>
                                         </div>
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Nombre del Paciente:</label>
