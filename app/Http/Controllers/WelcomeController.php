@@ -1,5 +1,8 @@
 <?php namespace App\Http\Controllers;
 
+use Input;
+use App\Servicios;
+
 class WelcomeController extends Controller {
 
 	/*
@@ -82,6 +85,20 @@ public function inicio()
 	public function listaserviciopendienteporfinalizar()
 	{
 		return view('listaserviciopendienteporfinalizar');
+	}
+
+	public function formsericpost()
+	{
+
+		$servicio = new Servicios();
+		$servicio->hora_solicitud_servicio = Input::get("ihora_solicitud");
+
+		$servicio->hora_de_servicio = Input::get("ihora_servicio");
+		$servicio->save();
+
+		dd($servicio);
+
+		//return redirect('/');
 	}
 
 

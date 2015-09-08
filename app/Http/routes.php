@@ -18,7 +18,8 @@
  Route::get('/pantallas/formreferencia', 'WelcomeController@formreferencia');
  Route::get('/pantallas/formllamadatelefonica', 'WelcomeController@formllamadatelefonica');
  Route::get('/pantallas/cargadeinventario', 'WelcomeController@cargadeinventario');
-Route::get('/pantallas/descargadeinventario', 'WelcomeController@descargadeinventario');
+ Route::get('/pantallas/descargadeinventario', 'WelcomeController@descargadeinventario');
+ Route::post('/pantallas/formseric', 'WelcomeController@formsericpost');
 
 
  Route::get('listaserviciopendiente', 'WelcomeController@listaserviciopendiente');
