@@ -26,57 +26,63 @@
             <div class="col-lg-6">
                                                                         
                                     <h1>Planilla</h1>
+                                    <form id="formpreciudadano" role="form" method="POST" action="/pantallas/formpreciudadano">
                                     <form id="formulariopciudadano" role="form">
+                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                                     	<div class="form-group has-error">
                                             <label class="control-label" for="inputError">Nombre Del Solicitante:</label>
-                                            <input style="width:200px;" type="text" class="form-control" id="inombre_solicitante" placeholder="Ejemplo: Pedro Perez">
+                                            <input style="width:200px;" type="text" class="form-control" id="inombre_solicitante" name="inombre_solicitante" placeholder="Ejemplo: Pedro Perez" required>
                                         </div>
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Cedula Del Solicitante:</label>
-                                            <input style="width:200px;" type="text" class="form-control" id="ici_solicitante" placeholder="Ejemplo: V-123456">
+                                            <input style="width:200px;" type="text" class="form-control" id="ici_solicitante" name="ici_solicitante" placeholder="Ejemplo: V-123456" required>
                                         </div>
                                         <div class="form-group has-warning">
                                             <label class="control-label" for="inputWarning">Telefono del Solicitante:</label>
-                                            <input type="tel" style="width:200px;" class="form-control" id="itelf_solicitante">
+                                            <input type="num" style="width:200px;" class="form-control" id="itelf_solicitante" name="itelf_solicitante" required>
                                         </div>
                                         <div class="form-group has-error">
                                             <label class="control-label" for="inputError">Nombre del Paciente:</label>
-                                            <input style="width:200px;" type="text" class="form-control" id="inombre_paciente" placeholder="Ejemplo: Pedro Perez">
+                                            <input style="width:200px;" type="text" class="form-control" id="inombre_paciente" name="inombre_paciente" placeholder="Ejemplo: Pedro Perez" required>
                                         </div>
 
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Edad del Paciente</label>
-                                            <input style="width:70px;"type="number" class="form-control" id="iedad_paciente" placeholder="0">
+                                            <input style="width:70px;"type="number" class="form-control" id="iedad_paciente" name="iedad_paciente" placeholder="0" required>
                                         </div>
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">IDX del Paciente:</label>
-                                            <input type="text" class="form-control" id="iidx_paciente" placeholder="Diagnostico del paciente">
+                                            <input type="text" class="form-control" id="iidx_paciente" name="iidx_paciente" placeholder="Diagnostico del paciente"required>
                                         </div>
                                         <div class="form-group has-warning">
                                             <label class="control-label" for="inputWarning">Direccion de la Emergencia:</label>
-                                            <input type="text" class="form-control" id="idireccion_emergencia" placeholder="Direccion de la Emergencia">
+                                            <input type="text" class="form-control" id="idireccion_emergencia" name="idireccion_emergencia"  placeholder="Direccion de la Emergencia"required>
                                         </div>
                                         <div class="form-group has-error">
                                             <label class="control-label" for="inputError">Fecha del Servicio:</label>
-                                            <input type="date" class="form-control" id="ifecha_servicio">
+                                            <input type="date" class="form-control" id="ifecha_servicio" name="ifecha_servicio" required>
                                         </div>
 
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Hora del Servicio:</label>
-                                            <input style="width:130px;" type="time" class="form-control" id="ihora_servicio">
+                                            <input style="width:130px;" type="time" class="form-control" id="ihora_servicio" name="ihora_servicio"required>
                                         </div>
+
+                                   <p align="center">
+                                
+                                       <button type="submit" class="btn btn-outline btn-success">Procesar</button>
+
+                                       <button type="button" class="btn btn-outline btn-info">Limpiar</button>
+                                
+                                       <button type="button" class="btn btn-outline btn-danger">Cancelar</button>
+                                
+                                   </p>
+
+
                                     </form>
 
-                             <p align="center">
-                                
-                                <button type="button" class="btn btn-outline btn-success">Procesar</button>
-
-                                <button type="button" class="btn btn-outline btn-info">Limpiar</button>
-                                
-                                <button type="button" class="btn btn-outline btn-danger">Cancelar</button>
-                                
-                            </p>
+                             
                                     
                                 
         </div>

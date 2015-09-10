@@ -26,7 +26,9 @@
             <div class="col-lg-6">
                                                                         
                                     <h1>Planilla</h1>
+                                    <form id="formradiofonica" role="form" method="POST" action="/pantallas/formradiofonica">
                                     <form  id="formularioradiofonica" role="form">
+                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                                     	<div class="form-group has-error">
                                             <label class="control-label" for="inputError">Nombre Del Solicitante</label>

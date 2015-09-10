@@ -26,65 +26,71 @@
             <div class="col-lg-6">
                                                                         
                                     <h1>Planilla</h1>
+                                    <form id="formreferencia" role="form" method="POST" action="/pantallas/formreferencia">
                                     <form  id="formularioreferencia" role="form">
+                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
 
                                     	<div class="form-group has-error">
                                             <label class="control-label" for="inputError">Centro Asistencial que Refiere:</label>
-                                            <input type="text" class="form-control" id="icentro_asistencial_refiere" placeholder="Centro Asistencial que Refiere" required>
+                                            <input type="text" class="form-control" id="icentro_asistencial_refiere" name="icentro_asistencial_refiere" placeholder="Ej.: Ambulatorio Madre Isabel" required>
                                         </div>
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Centro Asistencial Referido:</label>
-                                            <input type="text" class="form-control" id="icentro_asistencial_referido" placeholder="Centro Asistencial Referido" required>
+                                            <input type="text" class="form-control" id="icentro_asistencial_referido" name="icentro_asistencial_referido" placeholder="Ej.: Hospital Victorino Santaella Ruiz" required>
                                         </div>
                                         <div class="form-group has-warning">
                                             <label class="control-label" for="inputWarning">Hora de Solicitud:</label>
-                                            <input style="width:130px;" type="time" class="form-control" id="ihora_solicitud" required>
+                                            <input style="width:130px;" type="time" class="form-control" id="ihora_solicitud" name="ihora_solicitud" required>
                                         </div>
                                         <div class="form-group has-error">
                                             <label class="control-label" for="inputError">Medico que Refiere:</label>
-                                            <input style="width:200px;" type="text" class="form-control" id="imedico_refiere" placeholder="Medico que Refiere" required>
+                                            <input style="width:200px;" type="text" class="form-control" id="imedico_refiere" name="imedico_refiere" placeholder="Ej.: DR. Pedro Perez" required>
                                         </div>
 
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">S.A.S Medico:</label>
-                                            <input style="width:200px;" type="text" class="form-control" id="isas_medico" placeholder="S.A.S Medico">
+                                            <input style="width:200px;" type="text" class="form-control" id="isas_medico" name="isas_medico" placeholder=" Ej.:23258">
                                         </div>
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Nombre del Paciente:</label>
-                                            <input style="width:200px;" type="text" class="form-control" id="inombre_paciente" placeholder="Nombre del Paciente" required>
+                                            <input style="width:200px;" type="text" class="form-control" id="inombre_paciente" name="inombre_paciente" placeholder="Ej.: Juan Pacheco" required>
                                         </div>
                                         <div class="form-group has-warning">
                                             <label class="control-label" for="inputWarning">Edad del Paciente:</label>
-                                            <input style="width:70px;" type="number" class="form-control" id="iedad_paciente" placeholder="0">
+                                            <input style="width:90px;" type="number" class="form-control" id="iedad_paciente" name="iedad_paciente" placeholder="Ej.:40" required>
                                         </div>
                                         <div class="form-group has-error">
                                             <label class="control-label" for="inputError">IDX del Paciente:</label>
-                                            <input type="text" class="form-control" id="iidx_paciente" placeholder="IDX del Paciente">
+                                            <input type="text" class="form-control" id="iidx_paciente" name="iidx_paciente" placeholder="Ej.: Trauma Multisistemico" required>
                                         </div>
 
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Cedula del Paciente:</label>
-                                            <input style="width:200px;" type="text" class="form-control" id="ici_paciente" placeholder="Cedula de Identidad" required>
+                                            <input style="width:200px;" type="text" class="form-control" id="ici_paciente" name="ici_paciente" placeholder="Ej.: V-16889564" required>
                                         </div>
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Nombre del Representante:</label>
-                                            <input style="width:200px;" type="text" class="form-control" id="inombre_representante" placeholder="Nombre del Representante">
+                                            <input style="width:200px;" type="text" class="form-control" id="inombre_representante" name="inombre_representante" placeholder="Ej.:Juan Pacheco" required>
                                         </div>
                                         <div class="form-group has-warning">
                                             <label class="control-label" for="inputWarning">Cedula del Representante:</label>
-                                            <input style="width:200px;" type="text" class="form-control" id="ici_representante" placeholder=" Cedula del Identidad">
+                                            <input style="width:200px;" type="text" class="form-control" id="ici_representante" name="ici_representante" placeholder=" Ej.: V-16889564" required>
                                         </div>
+
+                                        <p align="center">
+                                
+                                            <button type="submit" class="btn btn-outline btn-success">Procesar</button>
+
+                                            <button type="reset" class="btn btn-outline btn-info">Limpiar</button>
+                                
+                                            <button type="button" class="btn btn-outline btn-danger">Cancelar</button>
+                                
+                                        </p>
+
+
                                     </form>
-
-                             <p align="center">
-                                
-                                <button type="button" class="btn btn-outline btn-success">Procesar</button>
-
-                                <button type="reset" class="btn btn-outline btn-info">Limpiar</button>
-                                
-                                <button type="button" class="btn btn-outline btn-danger">Cancelar</button>
-                                
-                            </p>
+                           
                                     
                                 
         </div>
