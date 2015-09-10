@@ -92,14 +92,33 @@ public function inicio()
 
 		$servicio = new Servicios();
 		$servicio->hora_solicitud_servicio = Input::get("ihora_solicitud");
-
 		$servicio->hora_de_servicio = Input::get("ihora_servicio");
+		$servicio->nombre_operador_seric = Input::get("inombre_operador_seric");
+		$servicio->ci_operador_seric = Input::get("ici_operador_seric");
 		$servicio->save();
 
 		dd($servicio);
 
 		//return redirect('/');
 	}
+
+	public function formradiofonicapost()
+	{
+
+	    $servicio = new Servicios();
+	    $servicio->nombre_solicitante = Input::get("inombre_solicitante");
+	    $servicio->hora_solicitud_servicio = Input::get("ihora_solicitud");
+        $servicio->idx_paciente = Input::get("iidx_paciente");
+        $servicio->edad_paciente = Input::get("iedad");
+        $servicio->direccion_emergencia = Input::get("idireccion_emergencia");
+
+		$servicio->save();
+
+		dd($servicio);
+
+		//return redirect('/');
+	}
+
 
 
 

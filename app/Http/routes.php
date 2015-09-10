@@ -20,6 +20,7 @@
  Route::get('/pantallas/cargadeinventario', 'WelcomeController@cargadeinventario');
  Route::get('/pantallas/descargadeinventario', 'WelcomeController@descargadeinventario');
  Route::post('/pantallas/formseric', 'WelcomeController@formsericpost');
+ Route::post('/pantallas/formradiofonica', 'WelcomeController@formradiofonicapost');
 
 
  Route::get('listaserviciopendiente', 'WelcomeController@listaserviciopendiente');

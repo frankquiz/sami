@@ -2,7 +2,7 @@
 
 @section('content')
 
-	<nav class="navbar navbar-default navbar-static-top active" role="navigation" style="margin-bottom: 0">
+	<nav class="navbar navbar-default navbar-static-top active" role="navigation">
 
 		@include('layout/nav-top')
 
@@ -29,7 +29,7 @@
                                     <form role="form">
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Nombre del Solicitante:</label>
-                                            <input  style="width:200px;" type="text" class="form-control" id="inombre_solicitante" placeholder="Nombre Solicitante" required>
+                                            <input  style="width:200px;" type="text" class="form-control" id="inombre_solicitante" name="inombre_solicitante" placeholder="Nombre Solicitante" required>
                                         </div>
                                         <div class="form-group has-warning">
                                             <label class="control-label" for="inputWarning">Cedula del Solicitate:</label>
@@ -56,17 +56,20 @@
                                             <label class="control-label" for="inputError">IDX del Paciente:</label>
                                             <input type="text" class="form-control" id="iidx_paciente" placeholder="IDX del paciente" required>
                                         </div>
+
+                                         <p align="center">
+                                
+                                              <button type="submit" class="btn btn-outline btn-success">Procesar</button>
+
+                                              <button type="reset" class="btn btn-outline btn-info">Limpiar</button>
+                                
+                                              <button type="button" class="btn btn-outline btn-danger">Cancelar</button>
+                                
+                                         </p>
+
                                     </form>
 
-                             <p align="center">
-                                
-                                <button type="button" class="btn btn-outline btn-success">Procesar</button>
-
-                                <button type="reset" class="btn btn-outline btn-info">Limpiar</button>
-                                
-                                <button type="button" class="btn btn-outline btn-danger">Cancelar</button>
-                                
-                            </p>
+                       
                                     
                                 
         </div>
