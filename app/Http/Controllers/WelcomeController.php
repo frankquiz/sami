@@ -76,15 +76,14 @@ public function inicio()
 		return view('/pantallas/descargadeinventario');
 	}
 
-	
 	public function listaserviciopendiente()
 	{
-		return view('listaserviciopendiente');
+		return view('/pantallas/listaserviciopendiente');
 	}
 
 	public function listaserviciopendienteporfinalizar()
 	{
-		return view('listaserviciopendienteporfinalizar');
+		return view('/pantallas/listaserviciopendienteporfinalizar');
 	}
 
 	public function paginicio()

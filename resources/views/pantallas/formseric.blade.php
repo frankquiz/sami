@@ -50,8 +50,6 @@
                                 
                                             <button type="submit" class="btn btn-outline btn-success">Procesar</button>
 
-                                            <button type="reset" class="btn btn-outline btn-info">Limpiar</button>
-                                            
                                             <button type="button" class="btn btn-outline btn-danger">Cancelar</button>
                                             
                                         </p>

@@ -19,16 +19,16 @@
  Route::get('/pantallas/formllamadatelefonica', 'WelcomeController@formllamadatelefonica');
  Route::get('/pantallas/cargadeinventario', 'WelcomeController@cargadeinventario');
  Route::get('/pantallas/descargadeinventario', 'WelcomeController@descargadeinventario');
+ 
  Route::post('/pantallas/formseric', 'WelcomeController@formsericpost');
  Route::post('/pantallas/formradiofonica', 'WelcomeController@formradiofonicapost');
  Route::post('/pantallas/formpreciudadano', 'WelcomeController@formpreciudadanopost');
  Route::post('/pantallas/formreferencia', 'WelcomeController@formreferenciapost');
  Route::post('/pantallas/formllamadatelefonica', 'WelcomeController@formllamadatelefonicapost');
-
-
- Route::get('listaserviciopendiente', 'WelcomeController@listaserviciopendiente');
-Route::get('listaserviciopendienteporfinalizar', 'WelcomeController@listaserviciopendienteporfinalizar');
-Route::get('/', 'WelcomeController@paginicio');
+ 
+ Route::get('/pantallas/listaserviciopendiente', 'WelcomeController@listaserviciopendiente');
+ Route::get('/pantallas/listaserviciopendienteporfinalizar', 'WelcomeController@listaserviciopendienteporfinalizar');
+ Route::get('/', 'WelcomeController@paginicio');
 
 
 Route::get('home', 'HomeController@index');

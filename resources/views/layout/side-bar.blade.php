@@ -39,11 +39,18 @@
                 <!-- /.nav-second-level -->
             </li>
             <li>
-                <a href="tables.html"><i class="fa fa-table fa-fw"></i>Estatus de Servicio</a>
+                <a href="#" class="active"><i class="fa fa-bar-chart-o fa-fw"></i> Status de Servicio <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li>
+                        <a href="{{ url('/pantallas/listaserviciopendiente') }}">Servicios Pendiente</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/pantallas/listaserviciopendienteporfinalizar') }}">Servicios por finalizar</a>
+                    </li>
+                </ul>
             </li>
-
-            <li>
-                            <a href="#" class="active"><i class="fa fa-wrench fa-fw"></i> Inventario<span class="fa arrow"></span></a>
+                    <li>
+                        <a href="#" class="active"><i class="fa fa-wrench fa-fw"></i> Inventario<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
                             <li>
                                 <a href="{{ url('/pantallas/cargadeinventario') }}">Cargar Inventario</a>
@@ -52,7 +59,22 @@
                                 <a href="{{ url('/pantallas/descargadeinventario') }}">Descargar Inventario</a>
                             </li>
                         </ul>
-                        </li>
+                    </li>
+                    <li>
+                        <a href="#" class="active"><i class="fa fa-wrench fa-fw"></i> Recursos<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="{{ url('ruta') }}">Paramedicos</a>
+                            </li>
+                            <li>
+                                <a href="{{ url('ruta') }}">Conductores</a>
+                            </li>
+                            <li>
+                                <a href="{{ url('ruta') }}">Unidades</a>
+                            </li>
+                        </ul>
+                    </li>
+            
             
 
             <!--Otra Opcion del Menu
