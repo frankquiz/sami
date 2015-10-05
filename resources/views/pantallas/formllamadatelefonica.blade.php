@@ -25,7 +25,7 @@
             
             <div class="col-lg-6">
                                                                         
-                                    <h1>Planilla</h1>
+                                    <h1>Solicitud de Servicio</h1>
                                      <form id="formllamadatelefonica" role="form" method="POST" action="/pantallas/formllamadatelefonica">
                                      <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                      <form role="form">
@@ -61,12 +61,8 @@
 
                                          <p align="center">
                                 
-                                              <button type="submit" class="btn btn-outline btn-success">Procesar</button>
+                                              <button type="submit" class="btn btn-outline btn-success">Registrar</button>
 
-                                              <button type="reset" class="btn btn-outline btn-info">Limpiar</button>
-                                
-                                              <button type="button" class="btn btn-outline btn-danger">Cancelar</button>
-                                
                                          </p>
 
                                     </form>

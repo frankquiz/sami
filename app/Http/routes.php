@@ -20,11 +20,27 @@
  Route::get('/pantallas/cargadeinventario', 'WelcomeController@cargadeinventario');
  Route::get('/pantallas/descargadeinventario', 'WelcomeController@descargadeinventario');
  
+ Route::get('/pantallas/recursoparamedico', 'WelcomeController@recursoparamedico');
+ Route::get('/pantallas/listaparamedico', 'WelcomeController@listaparamedico');
+ Route::get('/pantallas/formparamedico', 'WelcomeController@formparamedico');
+ 
+ Route::get('/pantallas/recursoconductor', 'WelcomeController@recursoconductor');
+ Route::get('/pantallas/listaconductor', 'WelcomeController@listaconductor');
+ Route::get('/pantallas/formconductor', 'WelcomeController@formconductor');
+
+ Route::get('/pantallas/recursounidad', 'WelcomeController@recursounidad');
+ Route::get('/pantallas/listaunidad', 'WelcomeController@listaunidad');
+ Route::get('/pantallas/formunidad', 'WelcomeController@formunidad');
+ 
  Route::post('/pantallas/formseric', 'WelcomeController@formsericpost');
  Route::post('/pantallas/formradiofonica', 'WelcomeController@formradiofonicapost');
  Route::post('/pantallas/formpreciudadano', 'WelcomeController@formpreciudadanopost');
  Route::post('/pantallas/formreferencia', 'WelcomeController@formreferenciapost');
  Route::post('/pantallas/formllamadatelefonica', 'WelcomeController@formllamadatelefonicapost');
+
+ Route::post('/pantallas/formparamedico', 'WelcomeController@formparamedicopost');
+ Route::post('/pantallas/formconductor', 'WelcomeController@formconductorpost');
+ Route::post('/pantallas/formunidad', 'WelcomeController@formunidadpost');
  
  Route::get('/pantallas/listaserviciopendiente', 'WelcomeController@listaserviciopendiente');
  Route::get('/pantallas/listaserviciopendienteporfinalizar', 'WelcomeController@listaserviciopendienteporfinalizar');

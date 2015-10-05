@@ -2,6 +2,9 @@
 
 use Input;
 use App\Servicios;
+use App\Persona;
+use App\unidades;
+
 
 class WelcomeController extends Controller {
 
@@ -36,7 +39,7 @@ class WelcomeController extends Controller {
 		return view('welcome');
 	}
 
-public function inicio()
+public function prueba()
 	{
 		return view('/pantallas/prueba');
 	}
@@ -89,6 +92,53 @@ public function inicio()
 	public function paginicio()
 	{
 		return view('welcome');
+	}
+
+	public function recursoparamedico()
+	{
+		return view('/pantallas/recursoparamedico');
+	}
+
+	public function listaparamedico()
+	{
+		return view('/pantallas/listaparamedico');
+	}
+
+	public function formparamedico()
+	{
+		return view('/pantallas/formparamedico');
+	}
+
+
+	public function recursoconductor()
+	{
+		return view('/pantallas/recursoconductor');
+	}
+
+	public function listaconductor()
+	{
+		return view('/pantallas/listaconductor');
+	}
+
+	public function formconductor()
+	{
+		return view('/pantallas/formconductor');
+	}
+
+
+	public function recursounidad()
+	{
+		return view('/pantallas/recursounidad');
+	}
+
+	public function listaunidad()
+	{
+		return view('/pantallas/listaunidad');
+	}
+
+	public function formunidad()
+	{
+		return view('/pantallas/formunidad');
 	}
 	
 	public function formsericpost()
@@ -176,11 +226,60 @@ public function formllamadatelefonicapost()
         $servicio->nombre_paciente = Input::get("inombre_paciente");        
         $servicio->edad_paciente = Input::get("iedad_paciente");        
         $servicio->idx_paciente = Input::get("iidx_paciente");
+        $servicio->save();
        
 		dd($servicio);
 
 		//return redirect('/');
 	}
 
+public function formparamedicopost()
+	{
+
+	    $personas = new Persona();
+	    $personas->nombre_persona = Input::get("inombre_persona");
+	    $personas->apellido_persona = Input::get("iapellido_persona"); 
+	    $personas->ci_persona = Input::get("ici_persona");
+        $personas->telefono_persona = Input::get("itelefono_persona");        
+        $personas->direccion_persona = Input::get("idireccion_persona");
+        //$persona->paramedico_persona = Input::get("iparamedico_persona");
+        $personas->save();
+
+		dd($personas);
+
+		//return redirect('/');
+	}
+
+public function formconductorpost()
+	{
+
+	    $personas = new Persona();
+	    $personas->nombre_persona = Input::get("inombre_persona");
+	    $personas->apellido_persona = Input::get("iapellido_persona"); 
+	    $personas->ci_persona = Input::get("ici_persona");
+        $personas->telefono_persona = Input::get("itelefono_persona");        
+        $personas->direccion_persona = Input::get("idireccion_persona");
+        //$persona->conductor_persona = Input::get("conductor_persona");
+        $personas->save();
+       
+		dd($personas);
+
+		//return redirect('/');
+	}
+
+	public function formunidadpost()
+	{
+
+	    $unidades = new Unidades();
+	    $unidades->placa_unidad = Input::get("iplaca_unidad");
+	    $unidades->numero_unidad = Input::get("inumero_unidad"); 
+	    $unidades->modelo_unidad = Input::get("imodelo_unidad");
+        //$persona->conductor_persona = Input::get("conductor_persona");
+        $unidades->save();
+       
+		dd($unidades);
+
+		//return redirect('/');
+	}
 	
 }

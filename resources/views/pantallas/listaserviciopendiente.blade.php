@@ -1,13 +1,31 @@
-<html>
-<head>
-	<meta charset="UTF8">
-	<title>SERVICIOS PENDIENTES</title>
-</head>
-<body>
-		<h1 align="center">listado de servicios pendientes por asignar</h1>
-		
+@extends('base')
+
+@section('content')
+
+	<nav class="navbar navbar-default navbar-static-top active" role="navigation" style="margin-bottom: 0">
+
+		@include('layout/nav-top')
+
+		@include('layout/side-bar')
+
+	</nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Servicios Pendientes no Procesados</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+
+            <div class="lol" id="morris-area-chart"></div>
+            <div class="lol" id="morris-bar-chart"></div>
+            <div class="lol" id="morris-donut-chart"></div>
+                                  
+           
+   
+        <!-- /#page-wrapper -->
 
 
 
-</body>
-</html>
+@endsection

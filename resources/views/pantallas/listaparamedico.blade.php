@@ -13,21 +13,17 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Dashboard</h1>
+                    <h1 class="page-header">Personal Paramedico</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
-            <!-- /.row -->
-            <div class="row">
 
-            <h1>AAA</h1>
-
-
-
-
-            </div>
-            <!-- /.row -->
-        </div>
+            <div class="lol" id="morris-area-chart"></div>
+            <div class="lol" id="morris-bar-chart"></div>
+            <div class="lol" id="morris-donut-chart"></div>
+                                  
+           
+   
         <!-- /#page-wrapper -->
 
 

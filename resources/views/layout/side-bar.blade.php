@@ -64,13 +64,13 @@
                         <a href="#" class="active"><i class="fa fa-wrench fa-fw"></i> Recursos<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
                             <li>
-                                <a href="{{ url('ruta') }}">Paramedicos</a>
+                                <a href="{{ url('/pantallas/recursoparamedico') }}">Paramedicos</a>
                             </li>
                             <li>
-                                <a href="{{ url('ruta') }}">Conductores</a>
+                                <a href="{{ url('/pantallas/recursoconductor') }}">Conductores</a>
                             </li>
                             <li>
-                                <a href="{{ url('ruta') }}">Unidades</a>
+                                <a href="{{ url('/pantallas/recursounidad') }}">Unidades</a>
                             </li>
                         </ul>
                     </li>

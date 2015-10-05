@@ -25,7 +25,7 @@
             
             <div class="col-lg-6">
                                                                         
-                                    <h1>Planilla</h1>
+                                    <h1>Solicitud de servicio</h1>
                                     <form id="formradiofonica" role="form" method="POST" action="/pantallas/formradiofonica">
                                     <form  id="formularioradiofonica" role="form">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -54,11 +54,7 @@
                                 
                                         <p align="center">
                                 
-                                            <button type="submit" class="btn btn-outline btn-success">Procesar</button>
-                                
-                                            <button type="reset" class="btn btn-outline btn-info">Limpiar</button>
-                                
-                                            <button type="button" class="btn btn-outline btn-danger">Cancelar</button>
+                                            <button type="submit" class="btn btn-outline btn-success">Registrar</button>
                                 
                                         </p>
                                     
