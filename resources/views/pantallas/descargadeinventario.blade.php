@@ -28,16 +28,19 @@
                                     <h1>Planilla</h1>
                                     <form role="form">
 
-                                        <div class="form-group has-success">
-                                            <input type="text" class="form-control">
+                                        <div class="form-group input-group">
+                                            <input type="text" class="form-control" placeholder="Buscar Producto">
                                             <span class="input-group-btn">
                                                 <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
                                                 </button>
                                             </span>
                                         </div>
+                                       
+
+
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Fecha:</label>
-                                            <input type="text" class="form-control" id="inputSuccess">
+                                            <input type="date" class="form-control" id="inputSuccess">
                                         </div>
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputWarning">Motivo de Descarga:</label>
