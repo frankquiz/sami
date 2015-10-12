@@ -31,15 +31,15 @@
                                      <form role="form">
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Nombre del Solicitante:</label>
-                                            <input  style="width:200px;" type="text" class="form-control" id="inombre_solicitante" name="inombre_solicitante" placeholder="Nombre Solicitante" required>
+                                            <input type="text" class="form-control" id="inombre_solicitante" name="inombre_solicitante" placeholder="Nombre Solicitante" required>
                                         </div>
-                                        <div class="form-group has-warning">
+                                        <div class="form-group has-success">
                                             <label class="control-label" for="inputWarning">Cedula del Solicitate:</label>
-                                            <input style="width:200px;" type="text" class="form-control" id="ici_solicitante" name="ici_solicitante" placeholder="Cedula del Solicitante"  required>
+                                            <input type="text" class="form-control" id="ici_solicitante" name="ici_solicitante" placeholder="Cedula del Solicitante"  required>
                                         </div>
-                                        <div class="form-group has-error">
+                                        <div class="form-group has-success">
                                             <label class="control-label" for="inputError">Telefono del Solicitante:</label>
-                                            <input style="width:200px;" type="tel" class="form-control" id="itelf_socilitante" name="itelf_socilitante">
+                                            <input type="tel" class="form-control" id="itelf_socilitante" name="itelf_socilitante">
                                         </div>
 
                                         <div class="form-group has-success">
@@ -48,13 +48,13 @@
                                         </div>
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Nombre del Paciente:</label>
-                                            <input  style="width:200px;" type="text" class="form-control" id="inombre_paciente" name="inombre_paciente" placeholder="Nombre del Paciente" required>
+                                            <input type="text" class="form-control" id="inombre_paciente" name="inombre_paciente" placeholder="Nombre del Paciente" required>
                                         </div>
-                                        <div class="form-group has-warning">
+                                        <div class="form-group has-success">
                                             <label class="control-label" for="inputWarning">Edad del Paciente:</label>
-                                            <input style="width:70px;" type="number" class="form-control" id="iedad_paciente" name="iedad_paciente" placeholder="0">
+                                            <input type="number" class="form-control" id="iedad_paciente" name="iedad_paciente" placeholder="0">
                                         </div>
-                                        <div class="form-group has-error">
+                                        <div class="form-group has-success">
                                             <label class="control-label" for="inputError">IDX del Paciente:</label>
                                             <input type="text" class="form-control" id="iidx_paciente" name="iidx_paciente" placeholder="IDX del paciente" required>
                                         </div>

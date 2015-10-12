@@ -36,7 +36,7 @@
                                             </span>
                                         </div>
 
-                                        <div class="form-group has-warning">
+                                        <div class="form-group has-success">
                                             <label class="control-label" for="inputWarning">Codigo:</label>
                                             <input type="number" class="form-control" id="inputWarning" placeholder="Ejemplo: 123456">
                                         </div>
@@ -50,7 +50,7 @@
                                             <input type="date" class="form-control" id="inputSuccess">
                                         </div>
 
-                                        <div class="form-group has-error">
+                                        <div class="form-group has-success">
                                             <label class="control-label" for="inputError">Procedencia:</label>
                                             <select class="form-control" id="inputError">
                                               <option value="CorpoSalud">CorpoSalud</option>
@@ -58,7 +58,7 @@
                                               <option value="Alcaldia">Alcaldía</option>
                                             </select>
                                         </div>
-                                        <div class="form-group has-warning">
+                                        <div class="form-group has-success">
                                             <label class="control-label" for="inputWarning">Cantidad:</label>
                                             <input type="number" class="form-control" id="inputWarning" placeholder="Ingrese Cantidad">
                                         </div>

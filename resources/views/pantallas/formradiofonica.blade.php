@@ -30,21 +30,21 @@
                                     <form  id="formularioradiofonica" role="form">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-                                    	<div class="form-group has-error">
+                                    	<div class="form-group has-success">
                                             <label class="control-label" for="inputError">Nombre Del Solicitante</label>
-                                            <input style="width:200px;" type="text" class="form-control" id="inombre_solicitante" name="inombre_solicitante" placeholder="Ejemplo: Pedro Perez" required>
+                                            <input type="text" class="form-control" id="inombre_solicitante" name="inombre_solicitante" placeholder="Ejemplo: Pedro Perez" required>
                                         </div>
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Hora de Solicitud:</label>
-                                            <input style="width:130px;" type="time" class="form-control" id="ihora_solicitud" name="ihora_solicitud">
+                                            <input type="time" class="form-control" id="ihora_solicitud" name="ihora_solicitud">
                                         </div>
-                                        <div class="form-group has-warning">
+                                        <div class="form-group has-success">
                                             <label class="control-label" for="inputWarning">IDX del Paciente:</label>
                                             <input type="text" class="form-control" id="iidx_paciente" name="iidx_paciente" placeholder="Diagnostico del paciente" required>
                                         </div>
-                                        <div class="form-group has-error">
+                                        <div class="form-group has-success">
                                             <label class="control-label" for="inputError">Edad del Paciente:</label>
-                                            <input  style="width:70px;"type="number" class="form-control" id="iedad" name="iedad" placeholder="0" required>
+                                            <input type="number" class="form-control" id="iedad" name="iedad" placeholder="0" required>
                                         </div>
 
                                         <div class="form-group has-success">

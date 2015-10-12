@@ -11,6 +11,7 @@
 |
 */
  Route::get('/', 'WelcomeController@index');
+ Route::get('/pantallas/login', 'WelcomeController@login');
  Route::get('/pantallas/prueba', 'WelcomeController@prueba');
  Route::get('/pantallas/formseric', 'WelcomeController@formseric');
  Route::get('/pantallas/formradiofonica', 'WelcomeController@formradiofonica');

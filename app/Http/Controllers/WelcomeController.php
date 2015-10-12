@@ -39,6 +39,11 @@ class WelcomeController extends Controller {
 		return view('welcome');
 	}
 
+	public function login()
+	{
+		return view('/pantallas/login');
+	}
+
 public function prueba()
 	{
 		return view('/pantallas/prueba');

@@ -30,20 +30,20 @@
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Hora de Solicitud:</label>
-                                            <input style="width:130px;" type="time"  class="form-control" id="ihora_solicitud" name="ihora_solicitud" required>
+                                            <input type="time"  class="form-control" id="ihora_solicitud" name="ihora_solicitud" required>
                                         </div>
-                                        <div class="form-group has-warning">
+                                        <div class="form-group has-success">
                                             <label class="control-label" for="inputWarning">Hora de Servicio:</label>
-                                            <input  style="width:130px;" type="time" class="form-control" id="ihora_servicio" name="ihora_servicio" required>
+                                            <input type="time" class="form-control" id="ihora_servicio" name="ihora_servicio" required>
                                         </div>
-                                        <div class="form-group has-error">
+                                        <div class="form-group has-success">
                                             <label class="control-label" for="inputError">Nombre Operador S.E.R.I.C</label>
-                                            <input style="width:200px;" type="text" class="form-control" id="inombre_operador_seric" name="inombre_operador_seric" placeholder="Ejemplo: Pedro Perez" required>
+                                            <input type="text" class="form-control" id="inombre_operador_seric" name="inombre_operador_seric" placeholder="Ejemplo: Pedro Perez" required>
                                         </div>
 
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Cedula de Identidad del Operador:</label>
-                                            <input style="width:200px;" type="num" class="form-control" id="ici_operador_seric" name="ici_operador_seric" placeholder="Ejemplo: V-123456" required>
+                                            <input type="num" class="form-control" id="ici_operador_seric" name="ici_operador_seric" placeholder="Ejemplo: V-123456" required>
                                         </div>
                                     
                                         <p align="center">

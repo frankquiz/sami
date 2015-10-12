@@ -6,7 +6,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="index.html">S.A.M.I</a>
+    <a class="navbar-brand" href="index.html">Servicio de Ambulancia Municipal Inmediato</a>
 </div>
 <!-- /.navbar-header -->
 
@@ -211,7 +211,7 @@
             <li><a href="#" class="active"><i class="fa fa-gear fa-fw"></i> Configuracion</a>
             </li>
             <li class="divider"></li>
-            <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Cerrar Sesion</a>
+            <li><a href="{{ url('/pantallas/login') }}"><i class="fa fa-sign-out fa-fw"></i> Cerrar Sesion</a>
             </li>
         </ul>
         <!-- /.dropdown-user -->
