@@ -43,6 +43,7 @@
  Route::post('/pantallas/formunidad', 'WelcomeController@formunidadpost');
  
  Route::get('/pantallas/listaserviciopendiente', 'WelcomeController@listaserviciopendiente');
+ Route::get('/pantallas/asignacion_servicio_pendiente/{id}', 'WelcomeController@asignacion_servicio_pendiente');
  Route::get('/pantallas/listaserviciopendienteporfinalizar', 'WelcomeController@listaserviciopendienteporfinalizar');
  Route::get('/', 'WelcomeController@paginicio');
 

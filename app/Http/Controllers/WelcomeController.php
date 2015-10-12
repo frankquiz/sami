@@ -3,7 +3,7 @@
 use Input;
 use App\Servicios;
 use App\Persona;
-use App\unidades;
+use App\Unidades;
 
 
 class WelcomeController extends Controller {
@@ -46,7 +46,7 @@ public function prueba()
 
 	public function formseric()
 	{
-		return view('/pantallas/formseric');
+	    return view('/pantallas/formseric');
 	}
 
 	public function formradiofonica()
@@ -81,7 +81,8 @@ public function prueba()
 
 	public function listaserviciopendiente()
 	{
-		return view('/pantallas/listaserviciopendiente');
+		$Servicio = Servicios::all();
+		return view('/pantallas/listaserviciopendiente',compact('Servicio'));
 	}
 
 	public function listaserviciopendienteporfinalizar()
@@ -101,7 +102,10 @@ public function prueba()
 
 	public function listaparamedico()
 	{
-		return view('/pantallas/listaparamedico');
+		$listapersona = Persona::all();
+		//$listapersona = Persona::where('habilitado_persona',1)->get();
+		//dd($listapersona);
+		return view('/pantallas/listaparamedico',compact('listapersona'));
 	}
 
 	public function formparamedico()
@@ -117,7 +121,13 @@ public function prueba()
 
 	public function listaconductor()
 	{
-		return view('/pantallas/listaconductor');
+		$listapersona = Persona::all();
+		return view('/pantallas/listaconductor',compact('listapersona'));
+	}
+
+	public function asignacion_servicio_pendiente($id)
+	{
+		return view('/pantallas/asignacion_servicio_pendiente');
 	}
 
 	public function formconductor()
@@ -133,7 +143,8 @@ public function prueba()
 
 	public function listaunidad()
 	{
-		return view('/pantallas/listaunidad');
+		$listaunid = Unidades::all();
+		return view('/pantallas/listaunidad',compact('listaunid'));
 	}
 
 	public function formunidad()
@@ -242,7 +253,7 @@ public function formparamedicopost()
 	    $personas->ci_persona = Input::get("ici_persona");
         $personas->telefono_persona = Input::get("itelefono_persona");        
         $personas->direccion_persona = Input::get("idireccion_persona");
-        //$persona->paramedico_persona = Input::get("iparamedico_persona");
+        //$persona->paramedico_persona = 1;
         $personas->save();
 
 		dd($personas);
@@ -259,7 +270,7 @@ public function formconductorpost()
 	    $personas->ci_persona = Input::get("ici_persona");
         $personas->telefono_persona = Input::get("itelefono_persona");        
         $personas->direccion_persona = Input::get("idireccion_persona");
-        //$persona->conductor_persona = Input::get("conductor_persona");
+        //$persona->conductor_persona = 1;
         $personas->save();
        
 		dd($personas);
@@ -274,7 +285,6 @@ public function formconductorpost()
 	    $unidades->placa_unidad = Input::get("iplaca_unidad");
 	    $unidades->numero_unidad = Input::get("inumero_unidad"); 
 	    $unidades->modelo_unidad = Input::get("imodelo_unidad");
-        //$persona->conductor_persona = Input::get("conductor_persona");
         $unidades->save();
        
 		dd($unidades);
