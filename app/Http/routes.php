@@ -45,7 +45,21 @@
  
  Route::get('/pantallas/listaserviciopendiente', 'WelcomeController@listaserviciopendiente');
  Route::get('/pantallas/asignacion_servicio_pendiente/{id}', 'WelcomeController@asignacion_servicio_pendiente');
+ Route::post('/pantallas/post_asignacion_servicio_pendiente/', 'WelcomeController@post_asignacion_servicio_pendiente');
+
  Route::get('/pantallas/listaserviciopendienteporfinalizar', 'WelcomeController@listaserviciopendienteporfinalizar');
+
+ Route::get('/pantallas/formgestionproductos', 'WelcomeController@formgestionproductos');
+ Route::get('/pantallas/formproductos', 'WelcomeController@formproductos');
+ Route::get('/pantallas/listaproductos', 'WelcomeController@listaproductos');
+ Route::post('/pantallas/formproductos', 'WelcomeController@formproductospost');
+
+ Route::get('/pantallas/gestionusuarios', 'WelcomeController@gestionusuarios');
+ Route::get('/pantallas/formcrearusuarios', 'WelcomeController@formcrearusuarios');
+ Route::get('/pantallas/listausuarios', 'WelcomeController@listausuarios');
+ Route::post('/pantallas/formcrearusuarios', 'WelcomeController@formcrearusuariospost');
+
+
  Route::get('/', 'WelcomeController@paginicio');
 
 

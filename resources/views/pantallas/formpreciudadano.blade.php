@@ -30,7 +30,12 @@
                                     <form id="formulariopciudadano" role="form">
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-                                    	<div class="form-group has-success">
+                                    	
+                                        <div class="form-group has-success">
+                                            <label class="control-label" for="inputError">hora de solicitud:</label>
+                                            <input type="time" class="form-control" id="ihora_solicitud" name="ihora_solicitud" required>
+                                        </div>
+                                        <div class="form-group has-success">
                                             <label class="control-label" for="inputError">Nombre Del Solicitante:</label>
                                             <input type="text" class="form-control" id="inombre_solicitante" name="inombre_solicitante" placeholder="Ejemplo: Pedro Perez" required>
                                         </div>

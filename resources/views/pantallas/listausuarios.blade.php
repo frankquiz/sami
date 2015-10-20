@@ -13,7 +13,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Personal Conductor</h1>
+                    <h2 class="page-header">Usuarios del sistema</h2>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -27,7 +27,7 @@
                 <div class="col-lg-9">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Activos
+                            Registrados 
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -35,23 +35,27 @@
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
-                                             <th>Id</th>
-                                             <th>Cedula</th>
+                                             <th>Cod</th>
                                              <th>Nombre</th>
                                              <th>Apellido</th>
-                                             <th>Telefono</th>
-                                             <th>Direccion</th>
+                                             <th>cedula de Identidad</th>
+                                             <th>correo Electronico</th>
+                                             <th>Cuenta del Sistema</th>
+                                             <th>Contraseña</th>
+                                        
                                         </tr>
                                     </thead>
                                     <tbody>
-                                         @foreach($listapersona as $value)
+                                         @foreach($listausuario as $value)
                                         <tr>
-                                            <td>{{$value->id_persona }}</td>
-                                            <td>{{$value->ci_persona}}</td>
-                                            <td>{{$value->nombre_persona}}</td>
-                                            <td>{{$value->apellido_persona}}</td>
-                                            <td>{{$value->telefono_persona}}</td>
-                                            <td>{{$value->direccion_persona}}</td>
+                                            <td>{{$value->id_usuario}}</td>
+                                            <td>{{$value->nombre_usuario}}</td>
+                                            <td>{{$value->apellido_usuario}}</td>
+                                            <td>{{$value->ci_usuario}}</td>
+                                            <td>{{$value->correo_usuario}}</td>
+                                            <td>{{$value->cuenta_usuario}}</td>
+                                            <td>{{$value->contraseña_usuario}}</td>
+                                          
                                             
                                         </tr>
                                         @endforeach

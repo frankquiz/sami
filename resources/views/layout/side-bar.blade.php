@@ -18,7 +18,7 @@
                 <a href="{{ url('/') }}"><i class="fa fa-dashboard fa-fw"></i> Inicio</a>
             </li>
             <li>
-                <a href="#" class="active"><i class="fa fa-bar-chart-o fa-fw"></i> Nuevo Servicio<span class="fa arrow"></span></a>
+                <a href="#" class="active"><i class="fa fa-plus-circle"></i> Nuevo Servicio<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
                     <li>
                         <a href="{{ url('/pantallas/formseric') }}">Seric</a>
@@ -50,7 +50,7 @@
                 </ul>
             </li>
                     <li>
-                        <a href="#" class="active"><i class="fa fa-wrench fa-fw"></i> Inventario<span class="fa arrow"></span></a>
+                        <a href="#" class="active"><i class="fa fa-columns"></i> Inventario<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
                             <li>
                                 <a href="{{ url('/pantallas/cargadeinventario') }}">Cargar Inventario</a>
@@ -71,6 +71,9 @@
                             </li>
                             <li>
                                 <a href="{{ url('/pantallas/recursounidad') }}">Unidades</a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/pantallas/formgestionproductos') }}">Productos y/o Equipos</a>
                             </li>
                         </ul>
                     </li>
@@ -181,20 +184,20 @@
                 </ul>
                 
             </li>
+            -->
 
             <li>
-                <a href="#" class="active"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
+
+                <a href="#" class="active"><i class="fa fa-users"></i>Usuarios<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
                     <li>
-                        <a href="blank.html">Blank Page</a>
+                        <a href="{{ url('/pantallas/gestionusuarios') }}">Gestionar Usuarios</a>
                     </li>
-                    <li>
-                        <a href="login.html">Login Page</a>
-                    </li>
+                    
                 </ul>
                 
             </li>
--->
+
         </ul>
     </div>
     <!-- /.sidebar-collapse -->

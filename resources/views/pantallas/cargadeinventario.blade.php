@@ -27,19 +27,11 @@
                                                                         
                                     <h1>Planilla</h1>
                                     <form id="formulario_carga_inventario" role="form">
+                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                    
 
-                                        <div class="form-group input-group">
-                                            <input type="text" class="form-control" placeholder="Buscar Producto">
-                                            <span class="input-group-btn">
-                                                <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
-                                                </button>
-                                            </span>
-                                        </div>
+                                       
 
-                                        <div class="form-group has-success">
-                                            <label class="control-label" for="inputWarning">Codigo:</label>
-                                            <input type="number" class="form-control" id="inputWarning" placeholder="Ejemplo: 123456">
-                                        </div>
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Nombre del Producto:</label>
                                             <input type="text" class="form-control" id="inputSuccess" placeholder="Ejemplo: Acetaminofen">
@@ -52,10 +44,7 @@
 
                                         <div class="form-group has-success">
                                             <label class="control-label" for="inputError">Procedencia:</label>
-                                            <select class="form-control" id="inputError">
-                                              <option value="CorpoSalud">CorpoSalud</option>
-                                              <option value="Gobernación">Gobernación</option>
-                                              <option value="Alcaldia">Alcaldía</option>
+                                            <input type="text" class="form-control" id="inputSuccess" placeholder="Ejemplo: Alcaldia de carrizal">
                                             </select>
                                         </div>
                                         <div class="form-group has-success">

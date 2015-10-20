@@ -30,6 +30,10 @@
                                      <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                      <form role="form">
                                         <div class="form-group has-success">
+                                            <label class="control-label" for="inputSuccess">Hora de Solicitud:</label>
+                                            <input type="time" class="form-control" id="ihora_solicitud" name="ihora_solicitud">
+                                        </div>
+                                        <div class="form-group has-success">
                                             <label class="control-label" for="inputSuccess">Nombre del Solicitante:</label>
                                             <input type="text" class="form-control" id="inombre_solicitante" name="inombre_solicitante" placeholder="Nombre Solicitante" required>
                                         </div>

@@ -4,6 +4,8 @@ use Input;
 use App\Servicios;
 use App\Persona;
 use App\Unidades;
+use App\Producto;
+use App\Usuarios;
 
 
 class WelcomeController extends Controller {
@@ -76,6 +78,13 @@ public function prueba()
 
 	public function cargadeinventario()
 	{
+
+		return view('/pantallas/cargadeinventario');
+	}
+	public function cargadeinventariopost()
+	{
+		//$servicio = Servicios::where("id_servicio",input::get("id_servicio"))->update(array(
+						//"id_persona_conductor"=>input::get("conductor"),
 		return view('/pantallas/cargadeinventario');
 	}
 
@@ -86,7 +95,7 @@ public function prueba()
 
 	public function listaserviciopendiente()
 	{
-		$Servicio = Servicios::all();
+		$Servicio = Servicios::where("status_pendiente_servicio",1)->get();
 		return view('/pantallas/listaserviciopendiente',compact('Servicio'));
 	}
 
@@ -107,9 +116,7 @@ public function prueba()
 
 	public function listaparamedico()
 	{
-		$listapersona = Persona::all();
-		//$listapersona = Persona::where('habilitado_persona',1)->get();
-		//dd($listapersona);
+		$listapersona = Persona::where("paramedico_persona",1)->get();
 		return view('/pantallas/listaparamedico',compact('listapersona'));
 	}
 
@@ -126,14 +133,44 @@ public function prueba()
 
 	public function listaconductor()
 	{
-		$listapersona = Persona::all();
+		$listapersona = Persona::where("conductor_persona",1)->get();
 		return view('/pantallas/listaconductor',compact('listapersona'));
 	}
 
 	public function asignacion_servicio_pendiente($id)
 	{
-		return view('/pantallas/asignacion_servicio_pendiente');
+		$conductores = Persona::where("conductor_persona",1)->where("disponibilidad_persona",1)->get();
+		$paramedicos = Persona::where("paramedico_persona",1)->where("disponibilidad_persona",1)->get();
+		$unidades = Unidades::where("disponibilidad_unidad",1)->get();
+		return view('/pantallas/asignacion_servicio_pendiente',compact("conductores","paramedicos","unidades","id"));
 	}
+
+	public function post_asignacion_servicio_pendiente()
+	{
+
+		$servicio = Servicios::where("id_servicio",input::get("id_servicio"))->update(array(
+						"id_persona_conductor"=>input::get("conductor"),
+						"id_persona_paramedico"=>input::get("paramedico"),
+						"id_unidad"=>input::get("unidad"),
+						"status_pendiente_servicio"=>0,
+						"status_asignado_servicio"=>1,
+				));
+
+		Persona::where("id_persona",input::get("conductor"))->update(array(
+						"disponibilidad_persona" => 0,
+						));
+
+		Persona::where("id_persona",input::get("paramedico"))->update(array(
+						"disponibilidad_persona" => 0,
+						));
+		
+		Unidades::where("id_unidad",input::get("paramedico"))->update(array(
+						"disponibilidad_unidad" => 0,
+						));
+
+		return redirect("/pantallas/listaserviciopendiente");
+	}
+
 
 	public function formconductor()
 	{
@@ -157,6 +194,67 @@ public function prueba()
 		return view('/pantallas/formunidad');
 	}
 	
+	public function formproductos()
+	{
+		return view('/pantallas/formproductos');
+	}
+
+	public function formgestionproductos()
+	{
+		return view('/pantallas/formgestionproductos');
+	}
+
+	public function listaproductos()
+	{
+		$listaproduct = Producto::all();
+		return view('/pantallas/listaproductos',compact('listaproduct'));
+	}
+
+	public function gestionusuarios()
+	{
+		return view('/pantallas/gestionusuarios');
+	}
+	public function formcrearusuarios()
+	{
+		return view('/pantallas/formcrearusuarios');
+	}
+	public function listausuarios()
+	{
+		$listausuario = Usuarios::all();
+		return view('/pantallas/listausuarios',compact('listausuario'));
+	}
+	public function formcrearusuariospost()
+	{
+		$usuario = new Usuarios();
+		$usuario->nombre_usuario = Input::get("inombre_usuario");
+		$usuario->apellido_usuario = Input::get("iapellido_usuario");
+		$usuario->ci_usuario = Input::get("ici_usuario");
+		$usuario->correo_usuario = Input::get("icorreo_usuario");
+		$usuario->cuenta_usuario = Input::get("icuenta_usuario");
+		$usuario->contraseña_usuario = Input::get("icontraseña_usuario");
+		
+		$usuario->save();
+		return view('/pantallas/formcrearusuarios');
+	}
+
+
+	public function formproductospost()
+	{
+
+		$productos = new Producto();
+		$productos->nombre_producto = Input::get("inombre_producto");
+		$productos->cantidad_producto = Input::get("icantidad_producto");
+		$productos->presentacion_producto = Input::get("ipresentacion_producto");
+		
+		$productos->save();
+
+		//dd($productos);
+		return view('/pantallas/formgestionproductos');
+	}
+	
+
+
+
 	public function formsericpost()
 	{
 
@@ -167,9 +265,9 @@ public function prueba()
 		$servicio->ci_operador_seric = Input::get("ici_operador_seric");
 		$servicio->save();
 
-		dd($servicio);
+		//dd($servicio);
 
-		//return redirect('/');
+		return redirect('/pantallas/formseric');
 	}
 
 	public function formradiofonicapost()
@@ -184,15 +282,16 @@ public function prueba()
 
 		$servicio->save();
 
-		dd($servicio);
+		//dd($servicio);
 
-		//return redirect('/');
+		return redirect('/pantallas/formradiofonica');
 	}
 
 public function formpreciudadanopost()
 	{
 
 	    $servicio = new Servicios();
+	    $servicio->hora_solicitud_servicio = Input::get("ihora_solicitud");
 	    $servicio->nombre_solicitante = Input::get("inombre_solicitante");
 	    $servicio->cedula_solicitante = Input::get("ici_solicitante");
         $servicio->telefono_solicitante = Input::get("itelf_solicitante");
@@ -204,9 +303,9 @@ public function formpreciudadanopost()
 
 		$servicio->save();
 
-		dd($servicio);
+		//dd($servicio);
 
-		//return redirect('/');
+		return redirect('/pantallas/formpreciudadano');
 	}
 
 public function formreferenciapost()
@@ -226,15 +325,16 @@ public function formreferenciapost()
         $servicio->ci_representante= Input::get("ici_representante");
 		$servicio->save();
 
-		dd($servicio);
+		//dd($servicio);
 
-		//return redirect('/');
+		return redirect('/pantallas/formreferencia');
 	}
 
 public function formllamadatelefonicapost()
 	{
 
 	    $servicio = new Servicios();
+	    $servicio->hora_solicitud_servicio = Input::get("ihora_solicitud"); 
 	    $servicio->nombre_solicitante = Input::get("inombre_solicitante");
 	    $servicio->cedula_solicitante = Input::get("ici_solicitante");
         $servicio->telefono_solicitante = Input::get("itelf_socilitante");        
@@ -244,9 +344,9 @@ public function formllamadatelefonicapost()
         $servicio->idx_paciente = Input::get("iidx_paciente");
         $servicio->save();
        
-		dd($servicio);
+		//dd($servicio);
 
-		//return redirect('/');
+		return redirect('/pantallas/formllamadatelefonica');
 	}
 
 public function formparamedicopost()
@@ -258,12 +358,11 @@ public function formparamedicopost()
 	    $personas->ci_persona = Input::get("ici_persona");
         $personas->telefono_persona = Input::get("itelefono_persona");        
         $personas->direccion_persona = Input::get("idireccion_persona");
-        //$persona->paramedico_persona = 1;
+        $personas->paramedico_persona = 1;
         $personas->save();
 
-		dd($personas);
 
-		//return redirect('/');
+		return redirect('/pantallas/formparamedico');
 	}
 
 public function formconductorpost()
@@ -275,12 +374,11 @@ public function formconductorpost()
 	    $personas->ci_persona = Input::get("ici_persona");
         $personas->telefono_persona = Input::get("itelefono_persona");        
         $personas->direccion_persona = Input::get("idireccion_persona");
-        //$persona->conductor_persona = 1;
+        $personas->conductor_persona = 1;
         $personas->save();
        
-		dd($personas);
-
-		//return redirect('/');
+		
+		return redirect('/pantallas/formconductor');
 	}
 
 	public function formunidadpost()
@@ -292,9 +390,9 @@ public function formconductorpost()
 	    $unidades->modelo_unidad = Input::get("imodelo_unidad");
         $unidades->save();
        
-		dd($unidades);
+		//dd($unidades);
 
-		//return redirect('/');
+		return redirect('/pantallas/formunidad');
 	}
 	
 }

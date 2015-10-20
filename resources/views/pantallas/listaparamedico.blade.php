@@ -23,34 +23,49 @@
                       <div class="lol" id="morris-bar-chart"></div>
                       <div class="lol" id="morris-donut-chart"></div>
 
-             <div>
-                   <table border="4">
-                           <thead>
-                               <th>Id</th>
-                               <th>Cedula</th>
-                               <th>Nombre</th>
-                               <th>Apellido</th>
-                               <th>Telefono</th>
-                               <th>Direccion</th>
-                               
-                           </thead>
-
-                           <tbody>
-                               @foreach($listapersona as $value)
-                             <tr>
-                              <td> <a href="pantallas/asignacion-servicio-pendiente/{{$value->id_persona }}">{{$value->id_persona }}</td>
-                              <td>{{$value->ci_persona}}</td>
-                              <td>{{$value->nombre_persona}}</td>
-                              <td>{{$value->apellido_persona}}</td>
-                              <td>{{$value->telefono_persona}}</td>
-                              <td>{{$value->direccion_persona}}</td>
-                              
-                            </tr>
-                                @endforeach
-                          </tbody>> 
-                   </table>>                     
-                     
-              </div>
+             
+              <div class="row">
+                <div class="col-lg-9">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Activos
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                             <th>Id</th>
+                                             <th>Cedula</th>
+                                             <th>Nombre</th>
+                                             <th>Apellido</th>
+                                             <th>Telefono</th>
+                                             <th>Direccion</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                         @foreach($listapersona as $value)
+                                        <tr>
+                                            <td>{{$value->id_persona }}</td>
+                                            <td>{{$value->ci_persona}}</td>
+                                            <td>{{$value->nombre_persona}}</td>
+                                            <td>{{$value->apellido_persona}}</td>
+                                            <td>{{$value->telefono_persona}}</td>
+                                            <td>{{$value->direccion_persona}}</td>
+                                            
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
        </div>
               
            

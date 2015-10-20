@@ -32,7 +32,7 @@
 
                                     	<div class="form-group has-error">
                                             <label class="control-label" for="inputError">Nombre:</label>
-                                            <input style="width:200px;" type="text" class="form-control" id="inombre_persona" name="inombre_persona" placeholder="Ejemplo: Pedro Perez" required>
+                                            <input type="text" class="form-control" id="inombre_persona" name="inombre_persona" placeholder="Ejemplo: Pedro Perez" required>
                                         </div>
                                              <div class="form-group has-error">
                                             <label class="control-label" for="inputError">Apellido:</label>
@@ -51,11 +51,7 @@
                                             <input type="text" class="form-control" id="idireccion_persona" name="idireccion_persona" placeholder="" required>
                                         </div>
                                         
-                                        <div class="form-group has-success">
-                                            <label class="control-label" for="inputSuccess">Cargo que Ocupa:</label>
-                                            <input type="text" class="form-control" id="iparamedico_persona" name="iparamedico_persona" placeholder="Paramedico"required>
-                                        </div>
-                                       
+                                                                          
                                    <p align="center">
                                 
                                        <button type="submit" class="btn btn-outline btn-success">Registrar</button>

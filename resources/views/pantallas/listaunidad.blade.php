@@ -22,15 +22,23 @@
             <div class="lol" id="morris-bar-chart"></div>
             <div class="lol" id="morris-donut-chart"></div>
                                   
-              <div>
-                   <table border="4">
-                           <thead>
-                               <th>id</th>
-                               <th>placa</th>
-                               <th>numeral</th>
-                               <th>modelo</th>
-                                             
-                           </thead>
+             
+              <div class="row">
+                <div class="col-lg-9">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Asignadas al servicio
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                  <thead>                                         
+                                     <th>id</th>
+                                     <th>placa</th>
+                                     <th>numeral</th>
+                                     <th>modelo</th>                                                   
+                                  </thead>
 
                            <tbody>
 
@@ -41,13 +49,18 @@
                               <td>{{$value->numero_unidad}}</td>
                               <td>{{$value->modelo_unidad}}</td>                                                                     
                             </tr>
-                                
-                                @endforeach
-
-                          </tbody>> 
-                   </table>>                     
-                     
-              </div>
+                                     
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
        </div>
    
    

@@ -13,7 +13,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Personal Conductor</h1>
+                    <h1 class="page-header">Medicamentos y Equipos Medicos</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -27,7 +27,7 @@
                 <div class="col-lg-9">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Activos
+                            Almacen 
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -36,22 +36,20 @@
                                     <thead>
                                         <tr>
                                              <th>Id</th>
-                                             <th>Cedula</th>
-                                             <th>Nombre</th>
-                                             <th>Apellido</th>
-                                             <th>Telefono</th>
-                                             <th>Direccion</th>
+                                             <th>nombre de producto</th>
+                                             <th>presentacion de producto</th>
+                                             <th>cantidad del producto</th>
+                                        
                                         </tr>
                                     </thead>
                                     <tbody>
-                                         @foreach($listapersona as $value)
+                                         @foreach($listaproduct as $value)
                                         <tr>
-                                            <td>{{$value->id_persona }}</td>
-                                            <td>{{$value->ci_persona}}</td>
-                                            <td>{{$value->nombre_persona}}</td>
-                                            <td>{{$value->apellido_persona}}</td>
-                                            <td>{{$value->telefono_persona}}</td>
-                                            <td>{{$value->direccion_persona}}</td>
+                                            <td>{{$value->id_producto}}</td>
+                                            <td>{{$value->nombre_producto}}</td>
+                                            <td>{{$value->presentacion_producto}}</td>
+                                            <td>{{$value->cantidad_producto}}</td>
+                                          
                                             
                                         </tr>
                                         @endforeach
