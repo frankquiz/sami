@@ -53,7 +53,7 @@
                                     <tbody>
                                         @foreach($Servicio as $value)
                                         <tr>
-                                            <td><a href="asignacion_servicio_pendiente/{{$value->id_servicio }}  ">{{$value->hora_solicitud_servicio }}</a></td>
+                                            <td><a href="asignacion_servicio_pendiente/{{$value->id_servicio }}">{{$value->hora_solicitud_servicio }}</a></td>
                                             <td>{{$value->hora_de_servicio}}</td>
                                             <td>{{$value->nombre_operador_seric}}</td>
                                             <td>{{$value->ci_operador_seric}}</td>

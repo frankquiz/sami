@@ -49,6 +49,7 @@
                     </li>
                 </ul>
             </li>
+            <!-- 
                     <li>
                         <a href="#" class="active"><i class="fa fa-columns"></i> Inventario<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
@@ -60,6 +61,7 @@
                             </li>
                         </ul>
                     </li>
+                                 -->
                     <li>
                         <a href="#" class="active"><i class="fa fa-wrench fa-fw"></i> Recursos<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">

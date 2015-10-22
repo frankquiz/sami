@@ -101,7 +101,9 @@ public function prueba()
 
 	public function listaserviciopendienteporfinalizar()
 	{
-		return view('/pantallas/listaserviciopendienteporfinalizar');
+		$Servicio = Servicios::where("status_asignado_servicio",1)->get();
+		return view('/pantallas/listaserviciopendienteporfinalizar',compact('Servicio'));
+		//return view('/pantallas/listaserviciopendienteporfinalizar');
 	}
 
 	public function paginicio()
@@ -218,6 +220,12 @@ public function prueba()
 	{
 		return view('/pantallas/formcrearusuarios');
 	}
+
+	public function FormFinalizarServicios($id)
+	{
+		return view('/pantallas/FormFinalizarServicios',compact("id"));
+	}
+
 	public function listausuarios()
 	{
 		$listausuario = Usuarios::all();

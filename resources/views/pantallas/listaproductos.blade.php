@@ -35,10 +35,11 @@
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
-                                             <th>Id</th>
+                                             <th>Cod</th>
                                              <th>nombre de producto</th>
                                              <th>presentacion de producto</th>
                                              <th>cantidad del producto</th>
+                                             <th>Opciones</th>
                                         
                                         </tr>
                                     </thead>
@@ -49,8 +50,10 @@
                                             <td>{{$value->nombre_producto}}</td>
                                             <td>{{$value->presentacion_producto}}</td>
                                             <td>{{$value->cantidad_producto}}</td>
-                                          
-                                            
+                                            <td><a href="**" class="btn btn-outline btn-success">+</a></td>
+                                            <td><a href="**" class="btn btn-outline btn-danger">-</a></td>
+
+
                                         </tr>
                                         @endforeach
                                     </tbody>

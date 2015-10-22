@@ -59,6 +59,8 @@
  Route::get('/pantallas/listausuarios', 'WelcomeController@listausuarios');
  Route::post('/pantallas/formcrearusuarios', 'WelcomeController@formcrearusuariospost');
 
+ Route::get('/pantallas/FormFinalizarServicios/{id}', 'WelcomeController@FormFinalizarServicios');
+
 
  Route::get('/', 'WelcomeController@paginicio');
 
